@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TubeFav</string>
+    <string name="add_description">TubeFav</string>
+    <string name="add_name">Name</string>
+    <string name="add_title">Title</string>
+    <string name="add_url">Video URL</string>
+    <string name="add_type">Type(e.g Horror)</string>
+    <string name="button_save">Save</string>
+    <string name="click_to_watch">Click to watch</string>
+
+</resources>
