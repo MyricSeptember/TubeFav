@@ -2,6 +2,7 @@ package com.mseptember.tubefav.repository;
 
 import android.arch.lifecycle.LiveData;
 
+import com.mseptember.tubefav.dao.VideoDao;
 import com.mseptember.tubefav.db.VideoDatabase;
 import com.mseptember.tubefav.entity.Video;
 
@@ -15,16 +16,16 @@ import io.reactivex.functions.Action;
 public class VideoRepositoryImpl implements VideoRepository {
 
     @Inject
-    VideoDatabase videoDatabase;
+    VideoDao videoDao;
 
-    public VideoRepositoryImpl(VideoDatabase videoDatabase) {
-        this.videoDatabase = videoDatabase;
+    public VideoRepositoryImpl(VideoDao videoDao) {
+        this.videoDao = videoDao;
     }
 
     @Override
     public LiveData<List<Video>> getVideos() {
 
-        return videoDatabase.videoDao().getVideos();
+        return videoDao.getVideos();
     }
 
     @Override
@@ -33,7 +34,7 @@ public class VideoRepositoryImpl implements VideoRepository {
         return Completable.fromAction(new Action() {
             @Override
             public void run() throws Exception {
-                videoDatabase.videoDao().addVideo(video);
+                videoDao.addVideo(video);
             }
         });
     }
@@ -43,13 +44,13 @@ public class VideoRepositoryImpl implements VideoRepository {
         return Completable.fromAction(new Action() {
             @Override
             public void run() throws Exception {
-                videoDatabase.videoDao().updateVideo(video);
+                videoDao.updateVideo(video);
             }
         });
     }
 
     @Override
     public LiveData<Video> getVideo(int videoId) {
-        return videoDatabase.videoDao().getSelectedVideo(videoId);
+        return videoDao.getSelectedVideo(videoId);
     }
 }

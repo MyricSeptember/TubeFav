@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import com.mseptember.tubefav.R;
 import com.mseptember.tubefav.entity.Video;
+import com.mseptember.tubefav.utils.Constants;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
 public class VideoAdapter extends RecyclerView.Adapter<VideoListViewHolder> {
     //TODO Add this to constants class and other.
     static final String YOUTUBE_THUMBNAIL_URL = "http://img.youtube.com/vi/%1$s/0.jpg";
+
     private final Context context;
     private List<Video> items;
     private View.OnClickListener viewClickListener;
