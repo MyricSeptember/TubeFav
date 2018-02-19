@@ -1,4 +1,4 @@
-package com.mseptember.tubefav.ui.listVideos;
+package com.mseptember.tubefav.ui.listvideos;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -18,8 +18,8 @@ import com.mseptember.tubefav.R;
 import com.mseptember.tubefav.entity.Video;
 import com.mseptember.tubefav.injection.Injectable;
 import com.mseptember.tubefav.injection.YouFavViewModelFactory;
-import com.mseptember.tubefav.ui.addVideos.VideoAddActivity;
-import com.mseptember.tubefav.ui.detailVideos.VideoDetailActivity;
+import com.mseptember.tubefav.ui.addvideos.VideoAddActivity;
+import com.mseptember.tubefav.ui.detailvideos.VideoDetailActivity;
 
 import java.util.ArrayList;
 import java.util.List;

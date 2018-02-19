@@ -3,9 +3,9 @@ package com.mseptember.tubefav.injection;
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
 
-import com.mseptember.tubefav.ui.addVideos.VideoAddViewModel;
-import com.mseptember.tubefav.ui.detailVideos.VideoDetailViewModel;
-import com.mseptember.tubefav.ui.listVideos.VideoListViewModel;
+import com.mseptember.tubefav.ui.addvideos.VideoAddViewModel;
+import com.mseptember.tubefav.ui.detailvideos.VideoDetailViewModel;
+import com.mseptember.tubefav.ui.listvideos.VideoListViewModel;
 
 import dagger.Binds;
 import dagger.Module;

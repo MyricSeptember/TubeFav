@@ -1,8 +1,8 @@
 package com.mseptember.tubefav.injection;
 
-import com.mseptember.tubefav.ui.addVideos.VideoAddFragment;
-import com.mseptember.tubefav.ui.detailVideos.VideoDetailFragment;
-import com.mseptember.tubefav.ui.listVideos.VideoListFragment;
+import com.mseptember.tubefav.ui.addvideos.VideoAddFragment;
+import com.mseptember.tubefav.ui.detailvideos.VideoDetailFragment;
+import com.mseptember.tubefav.ui.listvideos.VideoListFragment;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;

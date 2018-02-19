@@ -1,4 +1,4 @@
-package com.mseptember.tubefav.ui.addVideos;
+package com.mseptember.tubefav.ui.addvideos;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;

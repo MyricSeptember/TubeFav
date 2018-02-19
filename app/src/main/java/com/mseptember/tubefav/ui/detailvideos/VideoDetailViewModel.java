@@ -1,5 +1,6 @@
-package com.mseptember.tubefav.ui.addVideos;
+package com.mseptember.tubefav.ui.detailvideos;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 
 import com.mseptember.tubefav.entity.Video;
@@ -7,12 +8,7 @@ import com.mseptember.tubefav.repository.VideoRepository;
 
 import javax.inject.Inject;
 
-import io.reactivex.CompletableObserver;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
-
-public class VideoAddViewModel extends ViewModel {
+public class VideoDetailViewModel extends ViewModel {
 
     @Inject
     VideoRepository videoRepository;
@@ -22,7 +18,8 @@ public class VideoAddViewModel extends ViewModel {
     private String videoUrl;
 
     @Inject
-    VideoAddViewModel() {
+    VideoDetailViewModel() {
+        //TODO CHECK THIS OUT
     }
 
     String getVideoName() {
@@ -57,26 +54,8 @@ public class VideoAddViewModel extends ViewModel {
         this.videoUrl = videoUrl;
     }
 
-    void addVideo() {
-
-        Video video = new Video(0, videoName, videoDescription, videoType, videoUrl);
-        videoRepository.addVideo(video).observeOn(AndroidSchedulers.mainThread())
-                .subscribeOn(Schedulers.io())
-                .subscribe(new CompletableObserver() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-
-                    }
-
-                    @Override
-                    public void onComplete() {
-
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-                });
+    public LiveData<Video> getVideoById(int id) {
+        return videoRepository.getVideo(id);
     }
+
 }

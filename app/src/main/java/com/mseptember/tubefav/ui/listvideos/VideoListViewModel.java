@@ -1,4 +1,4 @@
-package com.mseptember.tubefav.ui.listVideos;
+package com.mseptember.tubefav.ui.listvideos;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;

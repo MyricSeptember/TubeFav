@@ -1,4 +1,4 @@
-package com.mseptember.tubefav.ui.listVideos;
+package com.mseptember.tubefav.ui.listvideos;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
 
 
-    <activity android:name=".ui.listVideos.VideoListActivity">
+    <activity android:name=".ui.listvideos.VideoListActivity">
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -23,11 +23,11 @@
     </activity>
 
         <activity
-            android:name=".ui.detailVideos.VideoDetailActivity"
+            android:name=".ui.detailvideos.VideoDetailActivity"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".ui.addVideos.VideoAddActivity"
+            android:name=".ui.addvideos.VideoAddActivity"
             android:windowSoftInputMode="adjustResize" />
 
  </application>

@@ -1,4 +1,4 @@
-package com.mseptember.tubefav.ui.listVideos;
+package com.mseptember.tubefav.ui.listvideos;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 
 import com.mseptember.tubefav.R;
 import com.mseptember.tubefav.entity.Video;
-import com.mseptember.tubefav.utils.Constants;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

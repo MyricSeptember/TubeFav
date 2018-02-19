@@ -1,4 +1,4 @@
-package com.mseptember.tubefav.ui.addVideos;
+package com.mseptember.tubefav.ui.detailvideos;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,7 +14,7 @@ import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.support.HasSupportFragmentInjector;
 
-public class VideoAddActivity extends AppCompatActivity implements HasSupportFragmentInjector, Injectable {
+public class VideoDetailActivity extends AppCompatActivity implements HasSupportFragmentInjector, Injectable {
 
     @Inject
     DispatchingAndroidInjector<Fragment> supportFragmentInjector;
@@ -22,7 +22,7 @@ public class VideoAddActivity extends AppCompatActivity implements HasSupportFra
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_video);
+        setContentView(R.layout.activity_detail_activity);
     }
 
     @Override

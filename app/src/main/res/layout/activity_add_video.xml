@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.mseptember.tubefav.ui.addVideos.VideoAddFragment"
+        android:name="com.mseptember.tubefav.ui.addvideos.VideoAddFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

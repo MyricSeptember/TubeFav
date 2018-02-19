@@ -1,4 +1,4 @@
-package com.mseptember.tubefav.ui.detailVideos;
+package com.mseptember.tubefav.ui.detailvideos;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
