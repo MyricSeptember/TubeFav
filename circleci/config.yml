@@ -9,6 +9,12 @@ jobs:
       general:a
           artifacts:
               - /home/ubuntu/circleci-101/app/build/outputs/apk/
+    install:
+      - TERM=dumb ./gradlew assemble
+
+     script:
+      - TERM=dumb ./gradlew check
+
     steps:
       - checkout
       - restore_cache:
