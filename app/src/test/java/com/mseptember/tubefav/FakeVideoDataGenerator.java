@@ -29,7 +29,7 @@ public class FakeVideoDataGenerator {
 
     public static Video getFakeVideo(){
 
-        return new Video(1,"Name","Descrip","Type","url");
+        return new Video(1,"Jim Rohn","Best motivational video ever ","Motivation","https://youtu.be/pjdo0o54Mrk");
     }
 
 }
